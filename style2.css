@@ -1,0 +1,50 @@
+.custom-yellow {
+  background-color:var(--bs-warning); 
+  color:black;
+  border-color:var(--bs-warning)
+}
+
+
+/* Hover effect for the images */
+.book:hover {
+  transform: scale(1.05); /* Slight zoom effect when hovering */
+}
+@media(min-width:768px){
+  .news-input{
+    width:50%;
+  }
+}
+body::before{
+  display:block;
+  content:'';
+  height:60px;/*pentru ca navbarul dupa ce lam atasat sus sa nu incurce la imaginea elementelor*/
+}
+.book-opacity {
+  opacity: 0.8; /* Default lower opacity */
+  transition: opacity 0.5s ease; /* Smooth transition */
+}
+
+.book-opacity:hover {
+  opacity: 1; /* Fully visible on hover */
+}
+.book-img{
+  max-width: 150px;
+  height:auto;
+}
+.fade-zoom-in {
+  opacity: 0;
+  transform: scale(0.8);
+  animation: fadeZoomIn 1s forwards;
+}
+
+@keyframes fadeZoomIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.header-image {
+  background: url('Imagini/puzzle.gif') no-repeat center center; /* Replace with your image/GIF link */
+  background-size: cover;
+  height: 250px; /* Adjust height as needed */
+}
